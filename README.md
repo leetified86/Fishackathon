@@ -8,7 +8,7 @@ The team consisted of -
 - Terry Cho: (Front End - Angular)
 - Myself: UI/UX Design (HTML, jQuery, CSS)
 
-Prototype of deployed site can be found [here]
+Prototype of deployed site can be found [here].
 
 More information about this Hackathon event can be found here: http://devpost.com/software/fishiefishie
 
