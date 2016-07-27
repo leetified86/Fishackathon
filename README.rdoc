@@ -1,0 +1,7 @@
+FISHIEFISHIE team's submission for Seattle's 2016 Fishackathon. 
+
+Prototype of deployed site can be found here: http://52.38.139.238/
+
+More information about this Hackathon event can be found here: http://devpost.com/software/fishiefishie
+
+The event itself: http://fishackathon2016.devpost.com/

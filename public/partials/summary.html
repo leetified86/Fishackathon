@@ -1,0 +1,46 @@
+<!--  <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+          <h3>Your Summary</h3>
+          <label for="date">Date</label>
+          <select id="date" class="form-control">
+            Need to pass in date into dateData()
+            <option ng-click="getEntries()">Totals</option>
+            <option ng-repeat="entry in entries track by $index | orderBy: '-created_at'" ng-click="dateData(entry[0])">{{ entry[0] }} - {{ entry[1] }} Fish</option>
+          </select>
+ -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+      </div>
+      <div class="col-xs-4">
+        <h3 class="page-heading">Your Summary</h3>
+        <div class="btn-group" data-ng-class="{open: open}">
+          <button class="btn">Filter By Date</button>
+          <button class="btn dropdown-toggle" data-ng-click="open=!open"><span class="caret"></span></button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+            <li><option ng-click="getEntries()">Totals</option></li>
+            <li><option class="close-menu" ng-repeat="entry in entries track by $index | orderBy: entry.created_at" ng-click="dateData(entry[0])">{{ entry[0] }} - {{ entry[1] }} Fish</option></li>
+          </ul>
+        </div>
+
+<!--         <select ng-options="entry for entry in entries" ng-model="selected" ng-change="dateData(selected[0])" class="form-control">
+        <option>Totals</option>
+      </select> -->
+        
+<!--           <select class="form-control">
+          <option ng-repeat="entry in entries track by $index | orderBy: '-created_at'" ng-model="selected" ng-change="dateDate(selected[0])">{{ entry[0] }} - {{ entry[1] }} Fish</option>
+        </select> -->
+
+        <h2 id="summary-date">Date <span id="fish-date">{{ dateParam }}</span></h2>
+        <h2>Fish Count <span class="fish-numbers">{{ totalFish }}</span></h2>
+        <h2>King <span class="fish-numbers">{{ fishArray[0] }}</span> Sockeye <span class="fish-numbers">{{ fishArray[1] }}</span> Coho <span class="fish-numbers">{{ fishArray[2] }}</span> Pink <span class="fish-numbers">{{ fishArray[3] }}</span> Chum <span class="fish-numbers">{{ fishArray[4] }}</span></h2>
+        <h2>Wilds <span class="fish-numbers">{{ wildOrHatch[0] }}</span> Hatcheries <span class="fish-numbers">{{ wildOrHatch[1] }}</span></h2>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+  </div>

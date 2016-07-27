@@ -1,0 +1,64 @@
+
+  <div class="container">
+<!--       <div class="row">
+
+      </div> -->
+      <div class="row">
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-4">
+          <h3 class="page-heading">Enter Catch Information</h2>
+          <form class="form-horizontal" id="catchcard">
+            <div class="form-group">
+                <label for="select-fish" class="add-fish-labels">1. Select Fish</label>
+                <select id="select-fish" class="form-control" ng-model="newFish.fish">
+                  <option hidden></option>
+                  <optgroup label="Salmon">
+                    <option>King</option>
+                    <option>Sockeye</option>
+                    <option>Coho</option>
+                    <option>Pink</option>
+                    <option>Chum</option>
+                  </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wild-hatch" class="add-fish-labels">2. Wild Or Hatchery</label>
+                <select id="wild-hatch" class="form-control" ng-model="newFish.type">
+                  <option hidden></option>
+                  <option value="Wild">Wild</option>
+                  <option value="Hatchery">Hatchery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="river-code" class="add-fish-labels">3. River Code</label>
+                <select id="river-code" class="form-control" ng-model="newFish.river">
+                  <option hidden></option>
+                  <optgroup label="Tacoma">
+                      <option>000 - Puyallup River</option>
+                  </optgroup>
+                  <optgroup label="Seattle">
+                      <option>001 - Duwamish River</option>
+                  </optgroup>
+                  <optgroup label="Olympia">
+                      <option>002 - Carbon River</option>
+                  </optgroup>
+                </select>
+            </div>
+            <div class="row">
+              <button type="button" id="add" class="btn btn-default" ng-click="addFish()">Add</button>
+              <button class="btn btn-primary" ng-click="submitFish()">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-4">
+          <div id="fishqueue">
+            <h3 class="add-fish-labels">Your Queue</h3>
+            <ul class="list-group">
+              <li class="list-group-item" ng-repeat="fish in fishQueue track by $index">{{ fish.type }} {{ fish.fish }} | {{ fish.river }}</li>
+            </ul>
+          </div>
+        </div>
+    </div> 
+
+  </div>

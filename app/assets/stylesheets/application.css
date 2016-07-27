@@ -1,0 +1,83 @@
+
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('/assets/Bebasneue_Bold.otf');
+}
+
+* { 
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+body, nav {
+	background-image: url(fishie-background.jpg);
+}
+
+nav {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+/*#catchcard, #fishqueue {
+	margin: 0 auto 0 auto;
+	width: 30%;
+}*/
+
+#login, #registration {
+	margin: 0 auto 0 auto;
+	width: 50%;
+}
+
+a:link {
+	color: beige;
+	padding: 0 5px;
+}
+
+a:visited {
+	color: beige;
+}
+
+h1 {
+	font-size: 60px;
+	color: beige;
+}
+
+h2 {
+	color: beige;
+}
+
+h5 {
+	font-size: 35px;
+}
+
+h6 {
+	font-size: 25px;
+}
+
+button {
+	margin: auto;
+}
+
+h3.page-heading {
+	color: beige;
+	font-size: 5em;
+}
+
+.fish-numbers {
+	font-size: 2.5em;
+	margin: 0 5px;
+}
+
+#fish-date {
+	font-size: 2em;
+	margin-left: 5px;
+}
+
+.add-fish-labels {
+	color: beige;
+	font-size: 1.5em;
+}
+
+#summary-date {
+	display: none;
+}
